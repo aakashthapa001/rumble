@@ -1,0 +1,121 @@
+/*================================
+ =========CSS for CONTACT=========
+ =================================*/
+
+#contact
+	padding: 100px 0
+	text-align: center
+	background: linear-gradient(90deg, #ff5858 10%, #EB3349 90%)
+
+	.huge
+		color: $accent-color
+		margin-bottom: 50px
+
+	.bigger
+		text-transform: uppercase
+		letter-spacing: -1px
+		font-size: 1.3em
+		font-weight: 500
+		color: $bg-service
+
+#contact-form
+	margin-bottom: 0
+	margin-top: 50px
+
+	p
+		margin-bottom: 15px
+
+	input, textarea
+		background: $bg-about
+		border: 0
+		color: $social-links
+		font:
+			family: 'lato'
+			size: 16px
+			weight: 200
+		padding: 15px
+
+		&:focus
+			outline: none
+
+
+	input
+		width: 100%
+		height: 50px
+		+box-sizing(border-box)
+
+	textarea
+		width: 100%
+		height: 220px
+		+box-sizing(border-box)
+
+	.submit
+		width: 140px
+		height: 60px
+		background: $bg-about
+		cursor: pointer		
+		text-align: center
+		display: inline-block
+		float: right				
+		font:
+			size: 24px
+			family: 'lato'
+			weight: 500
+		color: $accent-color
+		text-align: center
+		letter-spacing: 3px
+		text-transform: uppercase
+		outline: none
+		margin-top: -5px
+		vertical-align: middle
+		padding: 11px 0		
+
+		&:hover
+			text-decoration: none
+			background: #c0c0c0
+			color: $accent-color
+			+transition(all 0.5s ease)
+
+.contact-info
+	margin-top: 40px
+
+	ul
+		overflow: hidden
+
+		li
+			list-style: none
+			display: inline
+
+			h4
+				font:
+					size: 28px
+					family: 'lato'
+				float: left
+				display: block
+
+			p
+				font:
+					size: 14px
+					family: 'lato'
+					weight: 300
+				color: $bg-service
+				float: left
+				text-align: left
+				padding-top: 20px
+				display: block
+			
+			.icons
+				margin-top: 140px
+
+				span
+					display: block
+					font-size: 14px
+					font-family: 'lato'
+					font-weight: 300
+					margin: 0 0 7px 0				
+					color: $bg-service					
+					text-align: left
+
+					i
+						margin: 0 10px 0 0
+

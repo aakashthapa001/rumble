@@ -1,0 +1,79 @@
+/*================================
+ =========CSS for FOOTER=========
+ =================================*/
+
+#footer
+	background: $bg-footer
+	padding: 25px 0
+	text-align: center
+
+	p
+		color: $bg-about
+		font:
+			size: 18px
+			family: 'lato'
+			weight: 500
+		text-align: center
+		line-height: 18px
+		margin-top: 15px
+
+		a
+			color: $social
+
+			&:hover
+				color: $bg-contact
+				+transition(all 0.5s ease)
+				text-decoration: none
+
+	.social-link
+		a
+			text-decoration: none
+			+size(45px)
+			line-height: 45px
+			border: 2px solid $social-links
+			border-radius: 50%
+			color: $social-links
+			font:
+				size: 25px
+				weight: 300
+			margin-right: 15px
+			+transition(background 0.5s ease)
+			margin-bottom: 0
+
+			&:last-child
+				margin-right: none
+
+			&:hover
+				border: none
+				color: $accent-color
+				background: $bg-about
+				+transform(scale(1))
+
+
+/*=============BACK TO TOP =============*/
+
+#back-to-top
+	display: none
+	background: $primary-color
+	margin: 0
+	position: fixed
+	bottom: 0
+	right: 0
+	+size(50px)
+	z-index: 99
+	+transition(background 0.1s linear 0s)
+
+	&:hover
+		background: $text-color
+
+	i
+		font-size: 16px
+		color: $accent-color
+		position: absolute
+		left: 50%
+		top: 50%
+		margin-top: -7px
+		line-height: 1em
+
+	i
+		margin-left: -7px

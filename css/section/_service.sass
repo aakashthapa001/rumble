@@ -1,0 +1,74 @@
+/*================================
+ =========CSS for SERVICE=========
+ =================================*/
+
+#service
+	padding: 100px 0 50px 0
+	text-align: center
+	background: $bg-service
+
+	.huge
+		color: $bg-about
+		margin-bottom: 50px
+
+	.bigger
+		text-transform: uppercase
+		letter-spacing: -1px
+		font-size: 1.3em
+		font-weight: 500
+		color: $bg-about
+
+	.service-wrapper
+		margin: 50px 0 0 0
+
+		.icon
+			span
+				+size(70px)
+				line-height: 70px
+				border-radius: 50%
+				border: 3px solid $service-titles
+				padding: 20px 20px
+				font-family: 'linecons'
+				color: $service-titles
+				font-size: 50px
+				text-align: center
+				background: transparent
+				position: relative
+				cursor: pointer
+
+				&:after
+					content: ''
+					position: absolute
+					top: 0px
+					left: 0px
+					bottom: 0px
+					right: 0px
+					border: 2px solid $service-titles
+					border-radius: 50%
+					margin: -2px
+					opacity: 1
+					+transition(all 0.15s ease-out 0s)
+
+				&:hover:after
+					+transform(scale(1.5))
+					opacity: 0
+
+		.bigger
+			font:
+				size: 24px				
+				family: 'lato'
+				weight: 800
+			margin: 30px 0 5px 0
+			color: $service-titles					
+			text-transform: none
+
+		.info
+			color: $service-text
+			text-align: center
+			max-width: 220px
+			font-weight: 400
+			margin: 0 auto
+			font-size: 18px
+			font-family: 'lato'
+			font-weight: 600
+			margin-bottom: 50px

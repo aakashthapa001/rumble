@@ -1,0 +1,65 @@
+/*================================
+ =========CSS for ABOUT=========
+ =================================*/
+
+#aboutus
+	background: $bg-about
+	text-align: center
+	padding: 100px 0
+
+	.huge
+		color: $about-header
+		margin-bottom: 45px
+
+	.about
+		color: $accent-color
+		font-size: 25px
+		margin-bottom: 50px
+		text-transform: uppercase
+		font-weight: 400
+		line-height: 1
+		letter-spacing: -1px
+
+	.team-wrapper
+		.avatar
+			margin-bottom: 25px
+
+		.team-title
+			font:
+				size: 24px
+				weight: bold
+				family: lato
+			color: $accent-color
+			text-transform: uppercase
+
+		.team-des
+			font:
+				size: 18px
+				family: raleway
+				weight: 300
+			color: $social
+			margin-bottom: 20px
+
+		.social-links
+			
+			a
+				text-decoration: none
+				border: 1px solid $social-links
+				+size(32px)
+				line-height: 32px
+				color: $social-links
+				border-radius: 50%
+				font-size: 16px
+				font-weight: 300
+				margin-right: 10px
+				+transition()
+
+				&:hover
+					border: none					
+					color: $accent-color
+					background: $social
+					+transform(scale(1))
+
+				
+
+

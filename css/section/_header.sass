@@ -1,0 +1,145 @@
+/*================================
+ =========CSS for HEADER=========
+ =================================*/
+
+
+.top-header
+	background: 
+		image: url('../../assets/img/banner.jpg')
+		position: center
+		size: cover
+		repeat: no-repeat
+	padding-top: 60px
+	
+	.welcome
+		text-align: center
+
+		.gigantic
+			margin: 100px 0 50px 0
+
+		.huge
+			font-family: Existence
+			font-weight: 100
+			text-transform: uppercase
+
+		.down-btn
+			font-size: 100px
+			color: $social
+			text-decoration: none
+			margin: 120px 0 100px 0
+			+transition(all 1s ease)
+
+			&:hover
+				text-decoration: none
+				color: $bg-service
+				+transform(translate(0, -10px))
+
+header 
+	.sticky-nav
+		position: relative
+		width: 100%
+		z-index: 1001
+
+		&.stuck
+			position: fixed
+			background: #2F3238
+			top: 0
+			left: 0
+			z-index: 1001
+			margin-top: 0
+
+			#logo
+				margin-left: 20px
+
+	#logo
+		display: inline-block
+		cursor: pointer
+
+		&:hover
+			opacity: 0.6
+
+nav
+
+	&#menu
+		float: right
+		margin: 25px 20px 0 0
+
+		#menu-nav
+			margin: 0
+			padding: 0
+
+			li
+				list-style: none
+				display: inline-block
+				margin-left: 30px
+
+				&:first-child
+					margin-left: 0
+
+				a
+					color: $link-color
+					font:
+						size: 18px
+						family: 'lato'
+						weight: 300
+					display: block
+					opacity: 0.6
+
+					&:hover
+						color: $link-color
+						border-bottom: 2px solid $social
+						text-decoration: none
+						opacity: 1
+
+				&.current a
+					color: $link-color
+					border-bottom: 2px solid $social
+					text-decoration: none
+					opacity: 1
+
+/*==================================================
+   Mobile Navigation
+   =================================================*/
+
+#mobile-nav
+	display: none
+
+.menu-nav
+	background: url(../../assets/img/menu-mobile.png) 0 0 no-repeat
+	width: 16px
+	height: 16px
+	display: block
+	margin: 22px 0 0 0
+	+transform(rotate(0deg))
+	+transition(transform 250ms ease-out 0s)
+
+	&.open
+		background-position: 0 -16px
+		+transform(rotate(-180deg))
+		+transition(transform 250ms ease-out 0s)
+
+#navigation-mobile
+	display: none
+	text-align: center
+	width: 100%
+	background: $bg-contact
+	border-bottom: 1px solid $social-links
+	position: relative
+	z-index: 9999	
+
+	li
+		list-style: none
+		border-top: 1px solid $social-links
+
+		a
+			display: block
+			font:
+				size: 16px
+				family: 'lato'
+			padding: 20px 0
+			opacity: 0.6
+
+
+			&:hover
+				text-decoration: none
+				opacity: 1				
